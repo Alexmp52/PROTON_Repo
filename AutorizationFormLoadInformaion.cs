@@ -105,10 +105,10 @@ namespace ПРОТОН
             
 
             MySqlConnectionStringBuilder stringbuilder = new MySqlConnectionStringBuilder();
-            stringbuilder.Server = "sql12.freesqldatabase.com";
-            stringbuilder.UserID = "sql12764760";
-            stringbuilder.Password = "z97bMjPHpG";
-            stringbuilder.Database = "sql12764760";
+            stringbuilder.Server = "111111111111111111";
+            stringbuilder.UserID = "1111111111";
+            stringbuilder.Password = "11111111";
+            stringbuilder.Database = "111111111111";
             string connectionString = stringbuilder.ToString();
             string email = emailAuth.Content;
             string password = PasswordBox.Content;
@@ -180,11 +180,11 @@ namespace ПРОТОН
             else 
             {
                 MySqlConnectionStringBuilder stringbuilder = new MySqlConnectionStringBuilder();
-                stringbuilder.Server = "10.136.226.100";
-                stringbuilder.UserID = "4600365_proton";
-                stringbuilder.Password = "vN)GndEm8k(ef;@7";
-                stringbuilder.Database = "4600365_proton";
-                stringbuilder.Port = 3306;
+                stringbuilder.Server = "1111111111111";
+                stringbuilder.UserID = "11111111111111";
+                stringbuilder.Password = "1111111111111111";
+                stringbuilder.Database = "11111111111111";
+                stringbuilder.Port = 111111111111111;
                 string connectionString = stringbuilder.ToString();
               
                 DataTable dt = new DataTable();
@@ -207,7 +207,7 @@ namespace ПРОТОН
                 {
                     var random = new Random();
                     var SendCode=random.Next(1111,9999);
-                    string uemail = "protonmuzyka@yandex.ru";
+                    string uemail = "1111111111111";
 
                     MailAddress from = new MailAddress(uemail);
                     MailAddress to = new MailAddress(email);
@@ -217,7 +217,7 @@ namespace ПРОТОН
                     m.Body = $"<!DOCTYPE html>\r\n<html lang=\"ru\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <title>Код авторизации</title>\r\n  <style>\r\n    /* Базовые стили */\r\n    body \r\n      font-family: Arial, sans-serif;\r\n      margin: 0;\r\n      padding: 0;\r\n      background-color: #f4f4f4;\r\n    \r\n\r\n    table \r\n      width: 100%;\r\n      max-width: 600px;\r\n      margin: 20px auto;\r\n      background-color: #ffffff;\r\n      border-radius: 8px;\r\n      overflow: hidden;\r\n      border: 1px solid #dddddd;\r\n    \r\n\r\n    td \r\n      padding: 20px;\r\n      color: #333333;\r\n    \r\n\r\n    h1 \r\n      font-size: 24px;\r\n      color: #4CAF50;\r\n      margin-bottom: 20px;\r\n    \r\n\r\n    p \r\n      font-size: 16px;\r\n      line-height: 1.5;\r\n      color: #666666;\r\n    \r\n\r\n    .code \r\n      font-size: 24px;\r\n      font-weight: bold;\r\n      color: #333333;\r\n      background-color: #f1f1f1;\r\n      padding: 15px;\r\n      border-radius: 5px;\r\n      text-align: center;\r\n      margin-top: 20px;\r\n      letter-spacing: 3px;\r\n    \r\n\r\n    .footer \r\n      font-size: 12px;\r\n      text-align: center;\r\n      color: #999999;\r\n      padding-top: 10px;\r\n      border-top: 1px solid #dddddd;\r\n    \r\n\r\n    .button \r\n      display: inline-block;\r\n      padding: 10px 20px;\r\n      background-color: #4CAF50;\r\n      color: white;\r\n      text-decoration: none;\r\n      border-radius: 5px;\r\n      margin-top: 20px;\r\n    \r\n\r\n    .button:hover \r\n      background-color: #45a049;\r\n    \r\n  </style>\r\n</head>\r\n<body>\r\n  <table>\r\n    <tr>\r\n      <td>\r\n        <h1>Ваш код авторизации</h1>\r\n        <p>Здравствуйте,</p>\r\n        <p>Для подтверждения вашей личности и завершения процесса авторизации, пожалуйста, используйте следующий код:</p>\r\n        \r\n        <div class=\"code\">\r\n          {SendCode}\r\n        </div>\r\n\r\n        <p>Введите этот код в поле на приложения для продолжения.</p>\r\n\r\n        <p>Если вы не совершали запрос на авторизацию, пожалуйста, игнорируйте это сообщение.</p>\r\n\r\n        <div class=\"footer\">\r\n          <p>Это автоматическое сообщение. Пожалуйста, не отвечайте на него.</p>\r\n          <p>&copy; 2025 Протон</p>\r\n        </div>\r\n      </td>\r\n    </tr>\r\n  </table>\r\n</body>\r\n</html>\r\n";
                     System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient("smtp.yandex.ru", 587)
                     {
-                        Credentials = new NetworkCredential("protonmuzyka@yandex.ru", "fiaupihkuyfxciwg"),
+                        Credentials = new NetworkCredential("111111111111111111111u", "111111111111111111"),
                         EnableSsl = true,
                         Timeout = 30000,
                        
